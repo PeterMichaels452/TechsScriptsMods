@@ -23,11 +23,11 @@ namespace TechScriptAid.API.DTOs
         [StringLength(200, MinimumLength = 3, ErrorMessage = "Title must be between 3 and 200 characters")]
         public string Title { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "Content is required")]
+        [Required(ErrorMessage = "Content is mandatory field. *Required")]
         [MinLength(10, ErrorMessage = "Content must be at least 10 characters")]
         public string Content { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "Category is required")]
+        [Required(ErrorMessage = "Category is mandatory field. *Required")]
         [StringLength(50, ErrorMessage = "Category cannot exceed 50 characters")]
         public string Category { get; set; } = string.Empty;
 
