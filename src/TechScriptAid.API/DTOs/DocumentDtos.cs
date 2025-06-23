@@ -19,7 +19,7 @@ namespace TechScriptAid.API.DTOs
 
     public class CreateDocumentDto
     {
-        [Required(ErrorMessage = "Title is required")]
+        [Required(ErrorMessage = "Title is a mandatory field. *Required")]
         [StringLength(200, MinimumLength = 3, ErrorMessage = "Title must be between 3 and 200 characters")]
         public string Title { get; set; } = string.Empty;
 
